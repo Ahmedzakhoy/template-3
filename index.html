@@ -1073,5 +1073,14 @@
         </div>
       </div>
     </footer>
+    <script>
+      //so that page does not refresh on touch on phones and tablets
+      const preventDefault = document.querySelector(
+        "header .container nav > ul > li:last-child a"
+      );
+      preventDefault.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>
